@@ -31,10 +31,10 @@ def getSeconds(str):
     hours, minutes, seconds = list(str.split(':'))
     return seconds
 
-print("First record of texts,", texts[0][0], "texts", texts[0][1],  "at time", getTime(texts[0][2]))
-print("Last record of calls,", calls[lenCalls-1][0], "calls", calls[lenCalls-1][1], "at time", getTime(calls[lenCalls-1][2]), "lasting", calls[lenCalls-1][3],"seconds")
+print('First record of texts, {0} texts {1} at time {2}'.format(*texts[0]))
+print('Last record of calls, {0} calls {1} at time {2}, lasting {3} seconds'.format(*calls[-1]))
 
 #Big-O Analysis
 """
-
+O(1)
 """
