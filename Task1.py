@@ -29,5 +29,5 @@ print("There are", num, "different telephone numbers in the records.")
 
 #Big O analysis
 """
-union operation set: O(n)
+union operation set: O(n) + O(k)
 """
